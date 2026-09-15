@@ -1,0 +1,205 @@
+{
+  "per_model": {
+    "Logistic Regression": {
+      "fit_time_sec": 0.52,
+      "test_metrics": {
+        "accuracy": 0.67636577246916,
+        "precision": 0.21961157855744298,
+        "recall": 0.6997133704265722,
+        "f1": 0.3342999838891574
+      },
+      "train_metrics": {
+        "accuracy": 0.6751910396177739,
+        "precision": 0.2169201142174115,
+        "recall": 0.6885169884495405,
+        "f1": 0.32990294595877473
+      },
+      "overfit_gap_accuracy": -0.0012,
+      "fit_verdict": "Good fit (train and test close)",
+      "cv_5fold": {
+        "accuracy": {
+          "mean": 0.676175,
+          "std": 0.0031240998703626383
+        },
+        "precision": {
+          "mean": 0.21734208929440388,
+          "std": 0.003267497895068186
+        },
+        "recall": {
+          "mean": 0.6876210979547901,
+          "std": 0.010879895602577646
+        },
+        "f1": {
+          "mean": 0.3302837430894893,
+          "std": 0.004909773021109981
+        }
+      }
+    },
+    "Random Forest": {
+      "fit_time_sec": 52.13,
+      "test_metrics": {
+        "accuracy": 0.776542001174858,
+        "precision": 0.2704966083242609,
+        "recall": 0.5445961895127297,
+        "f1": 0.36145926589077887
+      },
+      "train_metrics": {
+        "accuracy": 0.8182957454828492,
+        "precision": 0.36149710504549215,
+        "recall": 0.7369530393727342,
+        "f1": 0.48505868316639383
+      },
+      "overfit_gap_accuracy": 0.0418,
+      "fit_verdict": "Good fit (train and test close)",
+      "cv_5fold": {
+        "accuracy": {
+          "mean": 0.8566499999999999,
+          "std": 0.004769302884070166
+        },
+        "precision": {
+          "mean": 0.34438038877404525,
+          "std": 0.023987502027438188
+        },
+        "recall": {
+          "mean": 0.25834230355220666,
+          "std": 0.01574675870648847
+        },
+        "f1": {
+          "mean": 0.2951217557623821,
+          "std": 0.018347269332261527
+        }
+      }
+    },
+    "AdaBoost": {
+      "fit_time_sec": 21.58,
+      "test_metrics": {
+        "accuracy": 0.8858429606422558,
+        "precision": 0.6234718826405868,
+        "recall": 0.042994436014162876,
+        "f1": 0.0804416403785489
+      },
+      "train_metrics": {
+        "accuracy": 0.885787435687816,
+        "precision": 0.6206045650832819,
+        "recall": 0.042407891408818815,
+        "f1": 0.07939075878940931
+      },
+      "overfit_gap_accuracy": -0.0001,
+      "fit_verdict": "Good fit (train and test close)",
+      "cv_5fold": {
+        "accuracy": {
+          "mean": 0.8855999999999999,
+          "std": 0.0008268917704270489
+        },
+        "precision": {
+          "mean": 0.5923078283945158,
+          "std": 0.038031293111281304
+        },
+        "recall": {
+          "mean": 0.0465016146393972,
+          "std": 0.007863070987190388
+        },
+        "f1": {
+          "mean": 0.08614215216636628,
+          "std": 0.01388741785128582
+        }
+      }
+    },
+    "Gradient Boosting": {
+      "fit_time_sec": 50.51,
+      "test_metrics": {
+        "accuracy": 0.8861758370863521,
+        "precision": 0.6260683760683761,
+        "recall": 0.049401450008430284,
+        "f1": 0.09157680887638693
+      },
+      "train_metrics": {
+        "accuracy": 0.8867273359213225,
+        "precision": 0.6571428571428571,
+        "recall": 0.051386898237922606,
+        "f1": 0.09532001407514563
+      },
+      "overfit_gap_accuracy": 0.0006,
+      "fit_verdict": "Good fit (train and test close)",
+      "cv_5fold": {
+        "accuracy": {
+          "mean": 0.8862500000000001,
+          "std": 0.0007373940601876291
+        },
+        "precision": {
+          "mean": 0.6170172618200788,
+          "std": 0.04442957909613577
+        },
+        "recall": {
+          "mean": 0.055543595263724446,
+          "std": 0.003703907542321905
+        },
+        "f1": {
+          "mean": 0.10181396253302152,
+          "std": 0.006041142129262648
+        }
+      }
+    }
+  },
+  "comparison_table": [
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.776542001174858,
+      "Precision": 0.2704966083242609,
+      "Recall": 0.5445961895127297,
+      "F1-score": 0.36145926589077887,
+      "CV F1 mean": 0.2951217557623821,
+      "CV F1 std": 0.018347269332261527
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.67636577246916,
+      "Precision": 0.21961157855744298,
+      "Recall": 0.6997133704265722,
+      "F1-score": 0.3342999838891574,
+      "CV F1 mean": 0.3302837430894893,
+      "CV F1 std": 0.004909773021109981
+    },
+    {
+      "Model": "Gradient Boosting",
+      "Accuracy": 0.8861758370863521,
+      "Precision": 0.6260683760683761,
+      "Recall": 0.049401450008430284,
+      "F1-score": 0.09157680887638693,
+      "CV F1 mean": 0.10181396253302152,
+      "CV F1 std": 0.006041142129262648
+    },
+    {
+      "Model": "AdaBoost",
+      "Accuracy": 0.8858429606422558,
+      "Precision": 0.6234718826405868,
+      "Recall": 0.042994436014162876,
+      "F1-score": 0.0804416403785489,
+      "CV F1 mean": 0.08614215216636628,
+      "CV F1 std": 0.01388741785128582
+    }
+  ],
+  "best_model": "Random Forest",
+  "tuning": {
+    "best_params": {
+      "max_depth": 10,
+      "min_samples_leaf": 4,
+      "min_samples_split": 16,
+      "n_estimators": 206
+    },
+    "search_cv_f1": 0.34902496450962256,
+    "tuned_test_metrics": {
+      "accuracy": 0.7297630702956726,
+      "precision": 0.2450764446747862,
+      "recall": 0.6378351036924633,
+      "f1": 0.35409743997753546
+    },
+    "baseline_test_metrics": {
+      "accuracy": 0.776542001174858,
+      "precision": 0.2704966083242609,
+      "recall": 0.5445961895127297,
+      "f1": 0.36145926589077887
+    },
+    "improved": false
+  }
+}
